@@ -24,7 +24,6 @@
   }
 }
 .product {
-  outline: 1px solid green;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-around;
@@ -33,7 +32,6 @@
 
    /* flex-basis: calc((100% - 30px) / 3); */
 .products-card-item {
-  outline: 1px solid red;
   width: 100%;
   justify-content: space-between;
   @media screen and (min-width: 768px) {

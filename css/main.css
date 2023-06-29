@@ -200,7 +200,6 @@ body {
   fill: currentColor;
 }
 .soc__link:hover, .soc__link:focus {
-  /*  підсв на білом синім   */
   background-color: var(--accent-background);
   color: var(--accent-text);
 }
@@ -223,7 +222,6 @@ body {
   transition: opacity var(--timing-function), visibility var(--timing-function);
 }
 
-/*  кінцевий стан модалки  */
 .modal {
   position: absolute;
   top: 50%;
@@ -249,7 +247,6 @@ body {
   }
 }
 
-/*  початковий стан модалки захований backdrop-ом   */
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0) rotate(90deg);
 }
@@ -292,7 +289,6 @@ body {
   fill: var(--accent-background);
 }
 
-/* заголовок модального вікна */
 .modal-title {
   font-weight: 700;
   font-size: 20px;
@@ -339,10 +335,6 @@ body {
   fill: var(--accent-background);
 }
 
-/* .form-input:focus ~ .icon
-{   fill: var(--accent-background);
-    border-color: var(--accent-background);
-} */
 .form-label {
   display: flex;
   flex-direction: column;
@@ -477,7 +469,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ------------------заголовок с навигацией------------- */
 .header {
   border-bottom: 1px solid #ececec;
   padding-top: 16px;
@@ -490,7 +481,6 @@ body {
   }
 }
 
-/* короб для лого та кoроба с навигацией та контактами */
 .header__container {
   display: flex;
   justify-content: left;
@@ -566,7 +556,6 @@ body {
   }
 }
 
-/* ========== номера телефона и емайла====== */
 .connect {
   display: none;
   color: var(--primary-text-color);
@@ -1219,7 +1208,6 @@ body {
 }
 
 .product {
-  outline: 1px solid green;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-around;
@@ -1228,7 +1216,6 @@ body {
 
 /* flex-basis: calc((100% - 30px) / 3); */
 .products-card-item {
-  outline: 1px solid red;
   width: 100%;
   justify-content: space-between;
   transition: box-shadow var(--timing-function);

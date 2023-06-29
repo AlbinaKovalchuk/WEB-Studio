@@ -1,4 +1,3 @@
-/* ------------------заголовок с навигацией------------- */
 .header {
   border-bottom: 1px solid #ececec;
   padding-top: 16px;
@@ -9,7 +8,6 @@
   }
 }
 
-/* короб для лого та кoроба с навигацией та контактами */
 .header__container {
   display: flex;
   justify-content: left;
@@ -19,7 +17,6 @@
   }
 }
 
-// відступ від лого, який є тільки в header
 .header__logo {
   margin-right: 0;
   @include tablet {
@@ -71,8 +68,6 @@
     }
   }
 }
-
-/* ========== номера телефона и емайла====== */
 .connect {
   display: none;
   color: var(--primary-text-color);
@@ -110,7 +105,6 @@
   margin-right: 7px;
 }
 
-// -------------------меню для мобільной версии
 .menu-open-btn {
   margin-left: auto;
   background-color: transparent;
@@ -132,8 +126,6 @@
   z-index: 1;
   width: 100%;
   height: 100%;
-  //  width: 100vw;
-  //  height: 100vw;
   > .container {
     padding-top: 48px;
     padding-bottom: 48px;

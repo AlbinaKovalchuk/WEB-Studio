@@ -8,7 +8,6 @@
   transition: opacity var(--timing-function), visibility var(--timing-function);
 }
 
-/*  кінцевий стан модалки  */
 .modal {
   position: absolute;
   top: 50%;
@@ -33,7 +32,6 @@
   transition: transform 250ms linear;
 }
 
-/*  початковий стан модалки захований backdrop-ом   */
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0) rotate(90deg);
 }
@@ -76,8 +74,6 @@
     fill: var(--accent-background);
   }
 }
-
-/* заголовок модального вікна */
 .modal-title {
   @include font(700, 20px, 1.15, 0.03em);
   @include desktop {
@@ -112,11 +108,6 @@
     fill: var(--accent-background);
   }
 }
-
-/* .form-input:focus ~ .icon
-{   fill: var(--accent-background);
-    border-color: var(--accent-background);
-} */
 
 .form-label {
   display: flex;

@@ -16,13 +16,11 @@
   }
   @media screen and (min-width: 1200px) {
     width: calc((100% - 150px) / 6);
-      //  width: 170px;
              
   }
 }
 
 .client__link {
-  // width: 170px;
   height: 92px;
   @include align-center();
   justify-content: center;
