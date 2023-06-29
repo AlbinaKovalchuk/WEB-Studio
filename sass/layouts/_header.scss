@@ -1,0 +1,217 @@
+/* ------------------заголовок с навигацией------------- */
+.header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+/* короб для лого та кoроба с навигацией та контактами */
+.header__container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  @include desktop {
+    @include align-center();
+  }
+}
+
+// відступ від лого, який є тільки в header
+.header__logo {
+  margin-right: 0;
+  @include tablet {
+    margin-right: 87px;
+  }
+  @include desktop {
+    margin-right: 92px;
+  }
+}
+
+.container-connect {
+  margin-left: auto;
+}
+
+.navigation {
+  @include align-center();
+  text-align: start;
+  @include font(500, 14px, 1.14, 0.02em);
+  color: var(--secondary-text-color);
+}
+.navigation__list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 50px;
+    margin-right: 86px;
+  }
+}
+
+.navigation__link {
+  transition: var(--timing-function);
+  &:hover {
+    color: var(--accent-background);
+  }
+}
+
+.navigation__item {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    ::after {
+      position: absolute;
+      left: 0px;
+      top: 46px;
+      content: '';
+      width: 100%;
+      height: 4px;
+      background: var(--accent-background);
+      border-radius: 2px;
+    }
+  }
+}
+
+/* ========== номера телефона и емайла====== */
+.connect {
+  display: none;
+  color: var(--primary-text-color);
+  fill: currentColor;
+  transition: color var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-background);
+  }
+
+  @include tablet {
+    @include font(500, 12px, 1.16, 0.02em);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  @include desktop {
+    display: flex;
+    @include font(500, 14px, 1.14, 0.02em);
+  }
+}
+
+.connect__item {
+  @include desktop {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.connect__icon {
+  margin-right: 7px;
+}
+
+// -------------------меню для мобільной версии
+.menu-open-btn {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-background);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: var(--primary-background-color);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  //  width: 100vw;
+  //  height: 100vw;
+  > .container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+  }
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 0px;
+  right: 4px;
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--accent-background);
+  }
+}
+
+.mob-menu.is-hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mob-menu-list {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__link {
+  @include font(500, 40px, 1.175, 0.02em);
+  color: var(--secondary-text-color);
+  transition: var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-background);
+  }
+}
+
+.mob_connect__item {
+  margin-bottom: 32px;
+}
+
+.mob_connect__item:last-child {
+  margin-bottom: 64px;
+}
+
+.connect__tel {
+  display: block;
+  @include font(500, 32px, 1.175, 0.02em);
+  color: var(--accent-background);
+}
+
+.connect__mail {
+  @include font(500, 24px, 1.16, 0.02em);
+  color: var(--primary-text-color);
+}
+
+.mob_soc__item {
+  @include font(500, 18px, 1.22, 0.02em);
+  color: var(--accent-background);
+  padding: 0px 10px;
+  border-right: 2px solid;
+  border-right-color: rgba(33, 33, 33, 0.2);
+}
+.mob_soc__item:last-child {
+  border-right-color: transparent;
+}

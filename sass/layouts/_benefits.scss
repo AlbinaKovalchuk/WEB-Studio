@@ -1,0 +1,56 @@
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.benefits__title {
+  text-align: center;
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px){text-align:left;}
+  
+}
+
+.benefits__item {
+  // width: 270px; було для десктопу
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+   @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-color);
+    border-radius: 4px;
+  }
+}
+
+.benefits__text {
+  @include font(400, 14px, 1.71, 0.03em);
+}
+
+.icon-detail::before {
+  background-image: url(../images/icon/antenna.svg);
+}
+
+.icon-punctuality::before {
+  background-image: url(../images/icon/clock.svg);
+}
+
+.icon-time::before {
+  background-image: url(../images/icon/diagram.svg);
+}
+
+.icon-tech::before {
+  background-image: url(../images/icon/astronaut.svg);
+}

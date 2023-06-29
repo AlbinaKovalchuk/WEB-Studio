@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css " />
+    <title>WebStudio</title>
+</head>
+
+<body>
+    <!------------------------------- Header ------------------->
+    <header class="header">
+        <div class="container header__container">
+            <a class="logo header__logo" href="./index.html" lang="en"><span class="logo__accent">Web</span>Studio</a>
+            <nav class="navigation">
+                <ul class="navigation navigation__list list">
+                    <li><a class="navigation__link" href="./index.html">Студія</a></li>
+                    <li><a class="navigation__link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="./contacts.html">Контакти</a> </li>
+                </ul>
+            </nav>
+
+            <button type="button" class="menu-open-btn" data-menu-open>
+                <svg class="icon_mob_menu" width="40" height="40">
+                    <use href="./images/icons.svg#icon_mob_menu"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="container">
+
+                <button type="button" class="menu-close-btn" data-menu-close>
+                    <svg class="icon-close_mob" width="40" height="40">
+                        <use href="./images/icons.svg#icon-close_mob"></use>
+                    </svg>
+                </button>
+
+                <div>
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu__item"><a class="mob-menu__link" href="./index.html">Студія</a>
+                        </li>
+                        <li class="mob-menu__item"><a class="mob-menu__link" href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="mob-menu__item"><a class="mob-menu__link--active" href="./contacts.html">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <ul class="mob_connect__list">
+                        <li class="mob_connect__item">
+                            <a class="connect__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob_connect__item">
+                            <a class="connect__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+
+                    <ul class="mob_soc list">
+                        <li class="mob_soc__item"><a class="mob_soc__link" href="#">
+                                <use href="#">Instagram</use>
+                            </a></li>
+                        <li class="mob_soc__item"><a class="mob_soc__link" href="#">
+                                <use href="#">Twitter</use>
+                            </a></li>
+                        <li class="mob_soc__item"><a class="mob_soc__link" href="#">
+                                <use href="#">Facebook</use>
+                            </a></li>
+                        <li class="mob_soc__item"><a class="mob_soc__link" href="#">
+                                <use href="#">Linkedin</use>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <div class="container foot">
+            <div class="container-tablet">
+                <div class="container-logo-contacts">
+                    <address class="container-address">
+                        <a class="link address-link navigation__link" href="https://goo.gl/maps/qexC5noHdbvhc4Kc7"
+                            target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+                    </address>
+                    <ul class="foot-contacts list">
+                        <li>
+                            <a class="link foot-contacts navigation__link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a class="link foot-contacts navigation__link" href="tel:+380961111111">+38 096 111 11
+                                11</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="add">
+                    <h3 class="add__title">приєднуйтесь</h3>
+                    <ul class="soc list">
+                        <li class="soc__item">
+                            <a class="soc__link" href="#">
+                                <svg class="" with="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc__item">
+                            <a class="soc__link" href=" #">
+                                <svg class="" with="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc__item">
+                            <a class="soc__link" href="#">
+                                <svg class="" with="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc__item">
+                            <a class="soc__link" href="#">
+                                <svg class="" with="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subscribe">
+                <h3 class="subscribe__title">підпишіться на розсилку</h3>
+                <div class="subscribe__container">
+                    <input class="subscribe__inp" type="email" name="mail" id="mail" placeholder="E-mail" />
+                    <button class="subscribe__button" type="submit"> Підписатися</button>
+                    <span class="send">
+                        <svg class="icon-send" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="container map__container">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.779270414117!2d30.534158622493827!3d50.426584040929896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2sLesi%20Ukrainky%20Blvd%2C%2026%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2scz!4v1680787104551!5m2!1sen!2scz"
+                width="100%" height="100%" style="border: 0" allow="fullscreen" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

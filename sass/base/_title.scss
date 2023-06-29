@@ -1,0 +1,22 @@
+// для заголовків секцій  H2
+.about__title,
+.team__title,
+.client__title {
+  text-align: center;
+  color: var(--secondary-text-color);
+  @include font(700, 28px, 1.17, 0.03em);
+    margin-bottom: 30px;
+  @include desktop {
+    @include font(700, 36px, 1.16, 0.03em);
+    margin-bottom: 50px;
+  }
+}
+
+// для заголовків   H3
+.add__title,
+.subscribe__title {
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--accent-text);
+  margin-bottom: 20px;
+}

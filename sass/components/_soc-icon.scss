@@ -1,0 +1,32 @@
+.soc {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.soc__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  @include align-center();
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: color var(--timing-function),
+    background-color var(--timing-function);
+  fill: currentColor;
+  &:hover,
+  &:focus {
+    /*  підсв на білом синім   */
+    background-color: var(--accent-background);
+    color: var(--accent-text);
+  }
+}
+
+.soc__item {
+  color: var(--accent-text);
+}
+
+.team__soc__item {
+  color: #afb1b8;
+}

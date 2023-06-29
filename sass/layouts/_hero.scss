@@ -1,0 +1,54 @@
+.hero {
+  margin: 0 auto;
+  padding: 118px 0px;
+  background: var(--secondary-background-color);
+  text-align: center;
+  background-image: var(--gradient), url(../images/hero_mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: var(--gradient), url(../images/hero_mob_2x.jpg);
+  }
+
+  @include tablet {
+    background-image: var(--gradient), url(../images/hero_tabl.jpg);
+    @include retina {
+      background-image: var(--gradient), url(../images/hero_tabl_2x.jpg);
+    }
+  }
+
+  @include desktop {
+    max-width: 1600px;
+    padding: 200px 0px;
+    background-image: var(--gradient), url(../images/hero.jpg);
+    @include retina {
+      background-image: var(--gradient), url(../images/hero_2x.jpg);
+    }
+  }
+}
+
+.hero__title {
+  @include font(900, 26px, 1.61, 0.06em);
+  max-width: 360px;
+  color: var(--primary-background-color);
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  @include desktop {
+    max-width: 696px;
+    @include font(900, 44px, 1.36, 0.06em);
+  }
+}
+
+.hero__button {
+  @include font(700, 16px, 1.87, 0.06em);
+  color: var(--accent-text);
+  background: var(--accent-background);
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 10px 24px;
+  @include desktop {
+    padding: 10px 32px;
+  }
+}
