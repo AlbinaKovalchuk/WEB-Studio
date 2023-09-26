@@ -23,6 +23,9 @@
 /*--- заховати заголовок та інше--- */
 .visually-hidden {
   position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   white-space: nowrap;
   width: 1px;
   height: 1px;
@@ -125,6 +128,10 @@ body {
   font-family: "Roboto", sans-serif;
   text-align: center;
   cursor: pointer;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .container {

@@ -10,8 +10,9 @@
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 10px;
-  @media screen and (min-width: 768px){text-align:left;}
-  
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .benefits__item {
@@ -19,7 +20,7 @@
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
   }
   &::before {
